@@ -9,14 +9,23 @@ Copyright (c) 2026 Ming-Feng Ho.
 This includes the renders of the simulation (`talk/media/`, except `beam_strip.bin`, which is data: below) and the
 stills (`talk/stills/`), but not the third-party material they show, listed below.
 
-**Attribution:** Ming-Feng Ho, "The Lyman-alpha Forest: Reading the Universe and Galaxies in Shadows" (talk, Leinweber
-Foundation site visit, University of Michigan, 2026), with a link to this repository.
+**Attribution** depends on what you use:
 
-**Images of the PRIYA simulation must also cite the PRIYA simulation paper.** This applies to any render, still or film
-that shows the simulation (the renders in `talk/media/`, and the stills and films of the slides that show them), and
-to any picture you make from its data files. Cite: Bird, Fernandez, Ho et al. 2023, "PRIYA: a new suite of Lyman-alpha
-forest simulations for cosmology", JCAP 10 (2023) 037, [arXiv:2306.05471](https://arxiv.org/abs/2306.05471). This
-citation is part of the attribution that CC BY 4.0 asks for.
+- **Pictures of DESI's data: cite DESI's original papers, not this talk.** This covers the 3D map and its quasars'
+  sightlines, the pairs counted on it, the quasar's spectrum, the redshifts of DESI's BAO measurements on the
+  expansion history, and the stills of those slides. These pictures show DESI's work, and this talk claims no credit
+  for it. Cite the DR1 paper (DESI Collaboration et al. 2026, AJ 171, 285) with DESI's acknowledgment, and the papers
+  of the catalogues and results the picture shows. All of them are listed in `README.md`.
+- **Images of the PRIYA simulation: cite the PRIYA simulation paper.** This covers any render, still or film that
+  shows the simulation (the renders in `talk/media/`, and the stills and films of the slides that show them), and any
+  picture you make from its data files. They are the only pictures this talk asks credit for. Cite Bird, Fernandez,
+  Ho et al. 2023, "PRIYA: a new suite of Lyman-alpha forest simulations for cosmology", JCAP 10 (2023) 037
+  ([arXiv:2306.05471](https://arxiv.org/abs/2306.05471)), together with the talk (below).
+- **Anything else from the slides** (their text and layout, and the other pictures and figures made for the talk):
+  Ming-Feng Ho, "The Lyman-alpha Forest: Reading the Universe and Galaxies in Shadows" (talk, Leinweber Foundation
+  site visit, University of Michigan, 2026), with a link to this repository.
+
+These citations are the attribution that CC BY 4.0 asks for.
 
 **Not covered** (these keep their own terms):
 

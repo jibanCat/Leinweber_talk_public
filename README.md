@@ -41,7 +41,7 @@ It runs in any browser with WebGL 2 and is best in Chrome. The first load is abo
 | `sw.js` | the offline cache (a service worker) |
 
 The files are exactly those the slides request, in both looks. They were built from the talk's working repository at
-commit `f0f5359`: 206 files, with the comments taken out of the JavaScript (the shaders keep their technical
+commit `03b6252`: 206 files, with the comments taken out of the JavaScript (the shaders keep their technical
 notes). Some modules carry code paths for the
 speaker's other talks; this repository runs only this one.
 
@@ -143,9 +143,12 @@ Evrard, Dragan Huterer and the Michigan cosmology group.
 - **The code** is under the MIT licence: see `LICENSE`.
 - **The content** (the slides' text, the pictures, stills, films and figures made for the talk) is under CC BY 4.0:
   see `LICENSE-CONTENT.md`.
+- **Pictures of DESI's data** (the map and its sightlines, the pair counts, the quasar's spectrum, the BAO
+  measurements' redshifts, and the stills of those slides) show DESI's work, and this talk claims no credit for it. If
+  you use one, cite DESI's original papers, listed above under "Data and credits", not this talk.
 - **Images of the PRIYA simulation** (the renders in `talk/media/`, the stills and films that show the simulation,
-  and any picture made from its data files): any use must also cite the PRIYA simulation paper, Bird, Fernandez, Ho et
-  al. 2023, JCAP 10 (2023) 037, [arXiv:2306.05471](https://arxiv.org/abs/2306.05471).
+  and any picture made from its data files) are the only pictures this talk asks credit for. Any use must cite the PRIYA
+  simulation paper, Bird, Fernandez, Ho et al. 2023, JCAP 10 (2023) 037, [arXiv:2306.05471](https://arxiv.org/abs/2306.05471).
 - **The data and figures of others** keep their own terms, and so do gl-matrix and `hash12` (their MIT notices are
   in `volume-spike/vendor/gl-matrix/LICENSE.md` and `LICENSE-CONTENT.md`). The PRIYA simulations' data files are shared as on
   jibancat.github.io, with credit and no licence of their own: see `LICENSE-CONTENT.md`.
