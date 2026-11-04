@@ -1,0 +1,53 @@
+{
+ "built": "2026-11-03T02:31:27.930Z",
+ "commit": "dc02b64",
+ "dirty": false,
+ "size": [
+  1920,
+  1080
+ ],
+ "checkpoints": 29,
+ "talk": "lw10",
+ "look": "paper",
+ "files": [
+  "title.0.jpg",
+  "thumb/title.0.jpg",
+  "fan.0.jpg",
+  "thumb/fan.0.jpg",
+  "fan.1.jpg",
+  "pairs.0.jpg",
+  "thumb/pairs.0.jpg",
+  "pairs.2.jpg",
+  "pairs.3.jpg",
+  "pairs.4.jpg",
+  "lyapairs.2.jpg",
+  "thumb/lyapairs.2.jpg",
+  "anchor.1.jpg",
+  "thumb/anchor.1.jpg",
+  "scales.1.jpg",
+  "thumb/scales.1.jpg",
+  "scales.2.jpg",
+  "readings.1.jpg",
+  "thumb/readings.1.jpg",
+  "lyman.1.jpg",
+  "thumb/lyman.1.jpg",
+  "beam.1.jpg",
+  "thumb/beam.1.jpg",
+  "beam.2.jpg",
+  "beam.3.jpg",
+  "beam.4.jpg",
+  "beam.5.jpg",
+  "beam.6.jpg",
+  "beam.7.jpg",
+  "thanks.0.jpg",
+  "thumb/thanks.0.jpg"
+ ],
+ "retaken": {
+  "files": [
+   "title.0.jpg",
+   "thanks.0.jpg"
+  ],
+  "commit": "f0f5359",
+  "why": "without the logos (2 Nov 2026)"
+ }
+}

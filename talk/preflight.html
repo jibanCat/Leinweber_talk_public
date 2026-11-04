@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Preflight</title>
+<style>  :root { --paper: #F4F2ED; --wash: #7D8DA3; --ink: #1F2732; --rust: #B93A20; }
+  html, body { margin: 0; background: var(--paper); color: var(--ink); font: 16px/1.45 system-ui, sans-serif; }
+  main { padding: 28px 36px; max-width: 56em; }
+  h1 { font: 400 26px/1.2 "Iowan Old Style", Palatino, Georgia, serif; margin: 0 0 4px; }
+  .sub { color: var(--wash); margin: 0 0 20px; }
+  table { border-collapse: collapse; width: 100%; }
+  td { padding: 7px 10px 7px 0; border-bottom: 1px solid rgba(125, 141, 163, 0.3); vertical-align: top; }
+  td:first-child { width: 1.6em; font-weight: 600; }
+  td:nth-child(2) { width: 13em; }
+  td:last-child { color: #4a5563; font-size: 14px; }
+  .ok { color: #3f6b4a; } .warn { color: #9a6a12; } .bad { color: var(--rust); }
+  .actions { margin: 22px 0; display: flex; gap: 12px; flex-wrap: wrap; }
+  a.btn, button { font: inherit; font-size: 15px; padding: 8px 14px; border: 1px solid var(--wash); background: transparent;
+                  color: var(--ink); text-decoration: none; cursor: pointer; border-radius: 3px; }
+  ul { margin: 6px 0 0; padding-left: 1.2em; }
+  #measuring { position: fixed; left: 24px; top: 16px; z-index: 60; margin: 0; padding: 6px 10px; background: var(--paper);
+               font: 13px ui-monospace, Menlo, monospace; }
+  #perf table { margin-top: 8px; } #perf td { font-size: 14px; }
+  #perf td:first-child { width: auto; font-weight: 400; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Preflight</h1>
+  <p class="sub">Run this on the presentation laptop, on the projector, before the talk.</p>
+  <table><tbody id="checks"></tbody></table>
+  <div class="actions">
+    <button id="measure">Measure performance</button>
+    <button id="offline">Make available offline</button>
+    <a class="btn" href="index.html?selftest">Determinism self-test on this GPU</a>
+    <a class="btn" id="heaviest" href="index.html?debug#b3.5">Frame rate in the heaviest shot</a>
+    <a class="btn" href="index.html">Start the talk</a>
+  </div>
+  <div class="actions">
+    <button id="contrast-standard">Contrast: standard</button>
+    <button id="contrast-strong">Contrast: projector-safe</button>
+    <a class="btn box" href="index.html?contrast=strong#b3.4">See the box, projector-safe</a>
+    <a class="btn box" href="index.html?contrast=standard#b3.4">See the box, standard</a>
+  </div>
+  <div class="actions" id="looks">
+    <a class="btn" href="index.html#fan.1">See the fan (the dark night)</a>
+    <a class="btn" href="index.html#xi.0">See the first chart (paper)</a>
+    <button id="look-clear">Forget a stored look</button>
+  </div>
+  <p id="offline-status" class="sub"></p>
+  <div id="perf"></div>
+  <p id="measuring" hidden>measuring… (the talk is rendering its heaviest shots behind this; keep the window full screen)</p>
+  <p class="sub">By hand, on the projector:</p>
+  <ul class="sub">
+    <li>This page's background is the talk's paper, #F4F2ED: on the projector it should read as warm off-white paper, not grey or blue.</li>
+    <li>Night Shift, True Tone, f.lux, Stage Manager and notifications off; the display not mirrored at a scaled resolution.</li>
+    <li>Measure performance with this window full screen on the projector (F11 / ⌃⌘F), at the resolution you will present at.</li>
+    <li>Full screen in the talk: F.</li>
+    <li>Press S once in the talk: the stills must appear, and S again returns to live rendering.</li>
+    <li>Contrast: open “See the box” both ways from the back of the room. If the web inside the box is hard to make out
+      with standard, choose projector-safe (only the volume's ink changes).</li>
+    <li>The look: the slides are dark; the light version (?look=paper) is for a weak projector. From the back of the room, the map’s points must read on the dark.</li>
+  </ul>
+</main>
+<script type="module" src="preflight.js"></script>
+</body>
+</html>

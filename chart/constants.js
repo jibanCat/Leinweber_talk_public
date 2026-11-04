@@ -1,0 +1,38 @@
+export const CONSTANTS = {
+  display: { ring_exaggeration: 5, source: 'display convention of the chart (not data)', kind: 'schematic' },
+  c: { km_s: 299792.458, source: 'SI definition of the metre (exact)', source_url: 'https://physics.nist.gov/cgi-bin/cuu/Value?c', kind: 'published' },
+  lya: {
+    n_lower: 1,
+    n_upper: 2,
+    energy_eV: 10.2,
+    lambda_nm: 121.567,
+    source: 'NIST Atomic Spectra Database (ASD), H I, the 1s–2p Lyman-α transition, vacuum wavelength',
+    source_url: 'https://physics.nist.gov/PhysRefData/ASD/lines_form.html',
+    also: 'the same line as DESI DR1 P1D\'s transition table (ledger C204)',
+    kind: 'published',
+  },
+  lyb: {
+    lambda_nm: 102.572,
+    source: 'NIST Atomic Spectra Database (ASD), H I, the 1s–3p Lyman-β transition, vacuum wavelength',
+    source_url: 'https://physics.nist.gov/PhysRefData/ASD/lines_form.html',
+    kind: 'published',
+  },
+  lyman: {
+    lines: [
+      { name: 'Lyα', n: 2, lambda_nm: 121.56701, f: 0.41641, energy_eV: 10.1988358 },
+      { name: 'Lyβ', n: 3, lambda_nm: 102.57220, f: 0.079142, energy_eV: 12.0875052 },
+      { name: 'Lyγ', n: 4, lambda_nm: 97.253650, f: 0.029006, energy_eV: 12.7485393 },
+      { name: 'Lyδ', n: 5, lambda_nm: 94.974287, f: 0.013945, energy_eV: 13.0545017 },
+      { name: 'Lyε', n: 6, lambda_nm: 93.780331, f: 0.0078035, energy_eV: 13.22070389 },
+    ],
+    higher_nm: [93.0748142, 92.6225605, 92.3150275, 92.0963006, 91.9351334, 91.8129300, 91.7180514, 91.6429076, 91.5823751,
+      91.5328932, 91.4919242, 91.4576201, 91.4286086, 91.4038537],
+    higher_f: [4.8164e-3, 3.1850e-3, 2.2172e-3, 1.6062e-3, 1.2011e-3, 9.2190e-4, 7.2310e-4, 5.7769e-4, 4.6886e-4, 3.8577e-4,
+      3.2124e-4, 2.7035e-4, 2.2967e-4, 1.9677e-4],
+    limit: { lambda_nm: 91.17535, ionization_eV: 13.598434599702 },
+    hc_eV_nm: 1239.841984,
+    source: 'NIST Atomic Spectra Database (ASD), H I lines (Ritz vacuum wavelengths, oscillator strengths f_ik, upper-level energies) and H I ionization energy',
+    source_url: 'https://physics.nist.gov/PhysRefData/ASD/lines_form.html ; https://physics.nist.gov/PhysRefData/ASD/ionEnergy.html',
+    kind: 'published',
+  },
+};

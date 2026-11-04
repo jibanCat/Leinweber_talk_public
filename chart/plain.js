@@ -1,0 +1,36 @@
+import { LW } from '../program.js';
+
+export const PLAIN = {
+  'spectrum.y': 'brightness',
+  'survey.key': '{acc:red}: more absorption',
+  'survey.ySq': 'correlation function × s²',
+  'xi_tracers.x': 'separation s [h^{−1} Mpc]',
+  'survey.s': 'separation s [h⁻¹ Mpc]',
+  'survey.desi': 'DESI DR2: red galaxies, 0.6 < z < 0.8',
+  'survey.baoName': 'Baryon Acoustic\nOscillations (BAO)',
+  'survey.lyaPrec': 'the same ruler, in the forest:\na distance to 0.8 % (DESI DR2)',
+  'survey.lyaY': 'correlation function × s²',
+  'survey.lyaBao': 'the ruler',
+  'scales.x': 'size [Mpc]',
+  'distances.yRatio': 'measured distance',
+  'distances.yRatioGloss': '0 = the standard model',
+  'distances.share': "dark energy's share of the Universe",
+  'distances.shareY': 'dark energy',
+  'distances.shareGloss': 'in the standard model',
+  'why.x': 'k [h Mpc^{−1}] at z = 3: smaller scales →',
+  'why.y': 'relative clustering',
+  'pk_z3.x': 'k [h Mpc^{−1}]: smaller →',
+  'pk_z3.y': 'clustering of matter, z = 3',
+  'plane.x': 'amplitude: how clustered',
+  'plane.y': 'slope',
+  'plane.planck': "Planck's amplitude ± its error",
+  'plane.prior': ['near the edge of', 'the range the model allows'],
+  'plane.alt': 'dense clouds: same at all times',
+  'p1d.y': 'strength of the wiggles',
+  'p1d.here': 'wiggles measured here',
+  'p1d.longest': 'on the broadest wiggles',
+  'p1d.x': 'wiggles [s/km]',
+  'p1d.ratio': 'wiggles, with ÷ without',
+};
+
+export const plain = (key, own) => (LW && Object.prototype.hasOwnProperty.call(PLAIN, key) ? PLAIN[key] : own);
